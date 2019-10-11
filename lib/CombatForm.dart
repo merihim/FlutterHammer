@@ -92,6 +92,7 @@ class _CombatFormState extends State<CombatForm> {
 
           return null;
         },
+        keyboardType: TextInputType.number,
         decoration: InputDecoration(labelText: "Hit+", hintText: "4+"),
         onChanged: (String value) {
           getCombatProperties().hit = int.parse(value);
